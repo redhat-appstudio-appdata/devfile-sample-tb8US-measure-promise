@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jgwest-tenant/devfile-sample/devfile-sample@sha256:e041db44062134de1a02dba60c5160706fd3f60aaa7877caf035b37c10bd5098
+        name: my-nodejs
+        resources: {}
+status: {}
